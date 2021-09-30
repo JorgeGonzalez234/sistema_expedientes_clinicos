@@ -1,0 +1,12 @@
+
+# HTID:14610013: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+SetOutputFilter DEFLATE
+Header unset ETag
+FileETag None
+<FilesMatch "\.(js|css|ico|pdf|jpg|jpeg|png|gif)$">
+Header set Cache-Control "public"
+Header set Expires "Thu, 15 Apr 2020 20:00:00 GMT"
+Header unset Last-Modified
+</FilesMatch>
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:14610013:
